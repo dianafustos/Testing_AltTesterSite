@@ -1,4 +1,4 @@
-#!/Users/dianafustos/PycharmProjects/testing_alttester/venv/bin/python3.12
+#!/Users/dianafustos/Projects/Testing_AltTesterSite/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

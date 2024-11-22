@@ -27,7 +27,10 @@ options.add_argument('--disable-dev-shm-usage')
 
 # Setting up the ChromeDriver 'Service' using 'ChromeDriverManager'
 # installs the correct version
-service = Service(ChromeDriverManager().install())
+#service = Service(ChromeDriverManager().install())
+#service = Service(ChromeDriverManager(version="131.0.6778.70").install())
+driver_path = "/Users/dianafustos/Projects/Testing_AltTesterSite/chromedriver-mac-arm64/chromedriver"
+service = Service(driver_path)
 
 
 
@@ -39,7 +42,7 @@ service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=options)
 
 # opening the AltTeser site
-driver.get("https://alttester.com")
+driver.get("https://staging-alttesterdotcom-staging.kinsta.cloud/")
 time.sleep(2)
 
 # prints the title of the page - the current page
